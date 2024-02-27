@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root{
     --cor-de-fundo: #1e1e1e;
-    --branco: #ffffff;
     --verde: #6fff57;
+    --branco: #ffffff;
     --botao-ativo: #3a375e;
     --botao-inativo: rgba(58, 55, 94, 0.5);
-    --text0-de-fundo: rgba(58, 55, 94, 0.3);
+    --texto-de-fundo: rgba(58, 55, 94, 0.3);
 }
-
 
 body{
     background-color: var(--cor-de-fundo);
@@ -26,14 +25,12 @@ body{
 }
 
 .titulo-principal{
-    align-items: left;
+    text-align: left;
     width: 100%;
     font-size: 32px;
 }
-
 .titulo-principal span{
     color: var(--verde);
-    font-size: 40px;
 }
 
 .botao{
@@ -46,18 +43,33 @@ body{
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid var(--botao-ativo);
+    border-bottom: 2px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
 }
 
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+}
+
 .botoes{
     display: block;
-
 }
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
     .botoes{
         display: flex;
+    }   
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
     }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
+
+
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
 }
