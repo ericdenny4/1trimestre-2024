@@ -100,7 +100,22 @@ body{
 }
 
 .contador{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
     text-align: center;
-    color: cyan;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+}
+
+.contador-digito-texto{
     font-size: 20px;
+    margin: 0;
+    color: deeppink;
 }
