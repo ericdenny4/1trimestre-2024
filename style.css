@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root{
-    --cor-de-fundo: #040020;
-    --verde: #9300f5;
+    --cor-de-fundo: #000129;
+    --verde: #a012ff;
     --branco: #ffffff;
-    --botao-ativo: #240da8;
-    --botao-inativo: rgba(43, 33, 177, 0.5);
-    --texto-de-fundo: rgba(21, 2, 197, 0.274);
+    --botao-ativo: #2c1dcf;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-de-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body{
@@ -35,7 +35,7 @@ body{
 
 .botao{
     font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--botao-inativo);
+    background-color: rgb(22, 22, 21);
     color: var(--branco);
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ body{
     font-size: 18px;
     align-items: center;
     width: 100%;
-    border-bottom: 2px solid var(--botao-ativo);
+    border-bottom: 4px solid var(--botao-ativo);
     border-left: 2px solid var(--botao-ativo);
     border-right: 2px solid var(--botao-ativo);
     border-top: none;
@@ -56,26 +56,28 @@ body{
 .botoes{
     display: block;
 }
+
 @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
-    }   
+    } 
+
     .botao:first-child{
         border-radius: 40px 0 0 0;
     }
+
     .botao:last-child{
         border-radius: 0 40px 0 0;
     }
 }
 
-
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom:4px solid var(--verde);
 }
 
 .abas-textos{
-    background-color: var(--texto-de-fundo);
+    background-color: rgb(22, 22, 21);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -91,6 +93,7 @@ body{
 .aba-conteudo-titulo-principal{
     font-size: 28px;
     text-align: center;
+    color:rgba(39, 248, 255, 0.897);
 }
 
 .aba-conteudo-titulo-secundario{
@@ -100,22 +103,24 @@ body{
 }
 
 .contador{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .contador-digito{
     padding: 0 16px;
     text-align: center;
+    min-width: 100px;
 }
 
 .contador-digito-numero{
     font-size: 80px;
+    margin: 0;
 }
 
 .contador-digito-texto{
     font-size: 20px;
     margin: 0;
-    color: deeppink;
+    color: rgb(39, 241, 255);
 }
